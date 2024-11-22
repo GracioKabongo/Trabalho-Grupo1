@@ -1,0 +1,48 @@
+body {
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1 {
+    color: #00bcd4;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.card {
+    background: #1e1e2f;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 255, 255, 0.3);
+}
+
+.card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: #00bcd4;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .card img {
+        height: 200px;
+    }
+}
